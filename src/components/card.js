@@ -9,7 +9,7 @@ const Card = (article) => {
   const authorImg = document.createElement('img');
   const authorNameSpan = document.createElement('span');
 
-  //hierarchy 
+  //assigning hierarchy 
   cardContainerDiv.appendChild(headlineDiv);
   cardContainerDiv.appendChild(authorDiv);
   authorDiv.appendChild(authorImgContainer);
@@ -58,13 +58,12 @@ const cardAppender = (selector) => {
   const entryPoint = document.querySelector(selector);
   axios.get(`http://localhost:5000/api/articles`)
   .then(res => {
-    // console.log(res);
+    //making data an array
     const data = Object.values(res.data.articles)
-    data.forEach(function (item, index) {
-      console.log(item);
+    //loop through array to make the cards and assigning entry point
+    data.forEach(function (item) {
       for (let i = 0; i < item.length; i++){
         const newCard = Card(item[i]);
-        // console.log(newCard);
         entryPoint.appendChild(newCard);
       }
     })

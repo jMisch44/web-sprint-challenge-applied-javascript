@@ -66,7 +66,7 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is the DOM?
 
-    The DOM stands for the Document Object Model and is a javaScript Object based off of the HTML file to get it's structure and content.
+    The DOM stands for the Document Object Model and is a javaScript Object based off of the HTML file. It uses the HTML file to get it's structure and content.
 
 2. What is an event?
     

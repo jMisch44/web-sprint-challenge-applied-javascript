@@ -40,10 +40,10 @@ const Header = (title, date, temp) => {
 
 const headerAppender = (selector) => {
   //header function
-  const todaysHeader = Header('Today', 'August 6th, \n 2021', '84\xB0');
-  const cssSelector = document.querySelector(selector);
-  cssSelector.appendChild(todaysHeader);
-  return cssSelector;
+  const todaysHeader = Header('Lambda Times', 'August 6th, 2021', '88\xB0');
+  const entryPoint = document.querySelector(selector);
+  entryPoint.appendChild(todaysHeader);
+  return entryPoint;
 
   // TASK 2
   // ---------------------

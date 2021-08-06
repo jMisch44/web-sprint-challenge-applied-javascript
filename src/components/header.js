@@ -22,6 +22,8 @@ const Header = (title, date, temp) => {
 
   //returning the header
   return headerContainerDiv;
+
+
   // TASK 1
   // ---------------------
   // Implement this function taking `title`, `date` and `temp` as its 3 args and returning the markup below.
@@ -37,6 +39,12 @@ const Header = (title, date, temp) => {
 }
 
 const headerAppender = (selector) => {
+  //header function
+  const todaysHeader = Header('Today', 'Aug 6', 73);
+  const cssSelector = document.querySelector(selector);
+  cssSelector.appendChild(todaysHeader);
+  return cssSelector;
+
   // TASK 2
   // ---------------------
   // Implement this function taking a css selector as its only argument.
